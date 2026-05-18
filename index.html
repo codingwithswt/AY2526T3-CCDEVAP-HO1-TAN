@@ -1,136 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CCAPDEV</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shawn William Tan - Home</title>
+  </head>
 
-<body>
+  <body>
 
-  <!-- NAVBAR -->
-  <header class="header">
-    <nav class="navbarcontainer">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="recommend.html">Recommendations</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#recommend">Recommend</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+    <main>
 
-    </nav>
-  </header>
+      <!-- ABOUT ME -->
+      <section id="about">
+        <h1>About Me</h1>
 
-  <main>
+        <figure>
+          <img src="resources/profile.jpg" alt="Profile Photo" width="250" height="400">
+        </figure>
 
-    <!-- ABOUT -->
-    <section id="home" class="about">
-      <div class="aboutcontainer">
+        <p>
+          Hi! My name is Shawn William Tan, you can call me Shawn or William.
+          I am currently a 2nd year student studying BS Information System in
+          De La Salle University!
+        </p>
 
-        <div class="abouttext">
-          <h2>About Me</h2>
-          <p>
-            Hi! My name is Shawn William Tan, you can call me Shawn or William. I am currently a 2nd year student studying BS Information System in De LaSalle University!
-          </p>
+        <h2>Schools Attended</h2>
+        <ul>
+          <li>St. Peter the Apostle School</li>
+          <li>MAPUA University</li>
+          <li>De La Salle University</li>
+        </ul>
+      </section>
 
-        <div class="aboutimage">
-          <img src="resources/profile.jpg" alt="Profile" width="250" height="400">
-        </div>
-
-          <ul class="Past Schools">
-            <li>St. Peter the Apostle School</li>
-            <li>MAPUA University</li>
-            <li>De LaSalle University</li>
-          </ul>
-        </div>
-
-        
-
-      </div>
-    </section>
-
-    <!-- INTERESTS -->
-    <section class="interests">
-      <div class="interestcontainer">
-
+      <!-- INTERESTS -->
+      <section id="interests">
         <h2>Interests</h2>
 
-        <div class="card-grid">
-
-          <article class="card">
-            <img src="images/music.jpg" alt="">
+        <article>
             <h3>Listening to Music</h3>
-          </article>
+            <img src="resources/favmusic.jpg" alt="Music illustration" width="250">
+        </article>
 
-          <article class="card">
-            <img src="images/movie.jpg" alt="">
+        <article>
             <h3>Watching Movies</h3>
-          </article>
+            <img src="resources/favmovie.jpg" alt="Movies illustration" width="250"> 
+        </article>
 
-          <article class="card">
-            <img src="images/drawing.jpg" alt="">
+        <article>
             <h3>Drawing</h3>
-          </article>
+            <img src="resources/drawing.jpg" alt="Drawing illustration" width="250">
+        </article>
+      </section>
 
-        </div>
+      <!-- INTERNAL PAGE LINKS -->
+      <section id="page-links">
+        <h2>Explore</h2>
+        <ul>
+          <li><a href="recommend.html">My Recommendations</a></li>
+          <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+      </section>
 
-      </div>
-    </section>
+    </main>
 
-    <!-- RECOMMENDATIONS -->
-    <section id="recommend" class="recommendations">
-      <div class="container">
+    <footer>
+      <p>&copy; 2026 Shawn William Tan</p>
+    </footer>
 
-        <h2>Recommendations</h2>
-
-        <div class="recommend-grid">
-
-          <article class="recommend-card">
-            <h3>Movie Title</h3>
-            <p>Genre</p>
-          </article>
-
-          <article class="recommend-card">
-            <h3>Song Title</h3>
-            <p>Artist</p>
-          </article>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="contact">
-      <div class="container contact-layout">
-
-        <div class="contact-image">
-          <img src="resources/profile.jpg" width="250" height="400">
-        </div>
-
-        <div class="contact-info">
-          <h2>Contact Me</h2>
-
-          <p>Name: Shawn William Tan</p>
-          <p>Email: shawn_william_tan@dlsu.edu.ph</p>
-
-          <div class="social-links">
-            <a href="#">GitHub</a>
-            <a href="#">Instagram</a>
-            <a href="#">Facebook</a>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="footer">
-    <p>© 2026 Shawn</p>
-  </footer>
-
-</body>
+  </body>
 </html>
