@@ -1,0 +1,306 @@
+/* ======================
+   GLOBAL STYLES (ALL PAGES)
+   ====================== */
+
+html {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: #1e1f21;
+  background-color: #fafafa;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+h3 {
+  font-size: 17px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 12px;
+  color: #444;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+p {
+  line-height: 28px;
+  color: #3a3b3d;
+}
+
+a {
+  color: #4a4aff;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+a:hover {
+  color: #2b2bcc;
+}
+
+ul {
+  list-style: none;
+}
+
+main {
+  flex: 1;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 48px 32px;
+}
+
+/* ======================
+   HEADER / NAV (ALL PAGES)
+   ====================== */
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: rgba(250, 250, 250, 0.95);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid #000000;
+  padding: 0 32px;
+}
+
+nav ul {
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+  padding: 17px 0;
+}
+
+nav a {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1e1f21;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 2px;
+  transition: 0.2s;
+}
+
+nav a:hover {
+  color: #4a4aff;
+  border-bottom-color: #4a4aff;
+}
+
+/* ======================
+   INDEX PAGE
+   ====================== */
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 48px;
+  border-bottom: 1px solid #000000;
+  margin-bottom: 48px;
+}
+
+.abouttext {
+  max-width: 260px;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.abouttext ul {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.abouttext ul li {
+  padding-left: 16px;
+  position: relative;
+}
+
+.abouttext ul li::before {
+  content: "–";
+  position: absolute;
+  left: 0;
+  color: #4a4aff;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-pic {
+  width: 280px;
+}
+
+#interests {
+  margin-bottom: 48px;
+}
+
+.interest-group {
+  margin-bottom: 40px;
+}
+
+.music,
+.movie {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.music img,
+.movie img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: 0.2s;
+}
+
+.music img:hover,
+.movie img:hover {
+  transform: translateY(-3px);
+}
+
+.drawing {
+  display: flex;
+  justify-content: center;
+}
+
+.drawing img {
+  max-width: 780px;
+  width: 100%;
+  border-radius: 8px;
+}
+
+#page-links ul {
+  display: flex;
+  gap: 24px;
+}
+
+/* ======================
+   RECOMMENDATIONS PAGE
+   ====================== */
+
+.recommendations {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.recommendations h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.recomovies,
+.recosongs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 48px;
+}
+
+.recomovies p,
+.recosongs p {
+  font-size: 14px;
+  color: #888;
+  text-align: center;
+}
+
+/* TABLES */
+table {
+  width: 100%;
+  max-width: 560px;
+  border-collapse: collapse;
+  font-size: 15px;
+  border: 1px solid #000;
+}
+
+table thead th {
+  padding: 12px 20px;
+  border: 1px solid #000;
+  background-color: #f5f5f5;
+}
+
+table tbody td {
+  padding: 11px 20px;
+  border: 1px solid #000;
+}
+
+/* MEDIA */
+audio {
+  display: block;
+  margin: 8px auto;
+  width: 100%;
+  max-width: 480px;
+}
+
+video {
+  display: block;
+  margin: 12px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* ======================
+   CONTACT PAGE
+   ====================== */
+
+#contact-info {
+  max-width: 480px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  text-align: center;
+}
+
+#contact-info figure img {
+  width: 250px;
+  border-radius: 25%;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+address {
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+address p {
+  font-size: 15px;
+}
+
+/* ======================
+   FOOTER (ALL PAGES)
+   ====================== */
+
+footer {
+  text-align: center;
+  padding: 24px 32px;
+  font-size: 14px;
+  color: #888;
+  border-top: 1px solid #000000;
+}

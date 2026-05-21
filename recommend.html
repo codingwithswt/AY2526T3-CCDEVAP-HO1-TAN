@@ -1,12 +1,17 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shawn William Tan - Recommendations</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Recommendations — Shawn William Tan</title>
   </head>
 
   <body>
+
     <header>
       <nav>
         <ul>
@@ -18,98 +23,94 @@
     </header>
 
     <main>
-      <section id="recommendations">
+      <div class="recommendations">
+
         <h1>Recommendations</h1>
-
-        <!-- MOVIE TABLE -->
-        <article id="movies">
+        
+        <section>
           <h2>Movies</h2>
-
-          <table border="1">
-            <thead>
-              <tr>
-                <th>Movie Title</th>
-                <th>Genre</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>The Perks of Being a Wallflower</td>
-                <td>Romance / Comedy</td>
-              </tr>
-              <tr>
-                <td>Eternal Sunshine of the Spotless Mind</td>
-                <td>Romance / Sci-Fi</td>
-              </tr>
-              <tr>
-                <td>Sinners</td>
-                <td>Horror / Action</td>
-              </tr>
-            </tbody>
-          </table>
-
-          <p>Will make a letterboxd account soon!</p>
-        </article>
+          <div class="recomovies">
+            <table>
+              <thead>
+                <tr>
+                  <th>Movie Title</th>
+                  <th>Genre</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>The Perks of Being a Wallflower</td>
+                  <td>Romance / Comedy</td>
+                </tr>
+                <tr>
+                  <td>Eternal Sunshine of the Spotless Mind</td>
+                  <td>Romance / Sci-Fi</td>
+                </tr>
+                <tr>
+                  <td>Sinners</td>
+                  <td>Horror / Action</td>
+                </tr>
+              </tbody>
+            </table>
+            <p>Will make a letterboxd account soon!</p>
+          </div>
+        </section>
 
         <!-- SONG TABLE -->
-        <article id="songs">
+        <section>
           <h2>Songs</h2>
+          <div class="recosongs">
+            <table>
+              <thead>
+                <tr>
+                  <th>Song Title</th>
+                  <th>Artist</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>I Want You Around</td>
+                  <td>Snoh Aalegra</td>
+                </tr>
+                <tr>
+                  <td>july 16th</td>
+                  <td>GIVEON</td>
+                </tr>
+                <tr>
+                  <td>Nobody But You</td>
+                  <td>Jorja Smith, Sonder</td>
+                </tr>
+              </tbody>
+            </table>
+            <p>
+              Check my
+              <a href="https://open.spotify.com/user/hru6sad5pwm6vmzows5gqwmz1?si=83465a90225c4cde"
+                 target="_blank" rel="noopener noreferrer">Spotify</a>!
+            </p>
 
-          <table border="1">
-            <thead>
-              <tr>
-                <th>Song Title</th>
-                <th>Artist</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>I Want You Around</td>
-                <td>Snoh Aalegra</td>
-              </tr>
-              <tr>
-                <td>july 16th</td>
-                <td>GIVEON</td>
-              </tr>
-              <tr>
-                <td>Nobody But You</td>
-                <td>Jorja Smith, Sonder</td>
-              </tr>
-            </tbody>
-          </table>
+            <h2>My Favorite Song!</h2>
+            <audio controls>
+              <source src="resources/song.mp3" type="audio/mpeg" />
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+        </section>
 
-          <p>
-            Check my
-            <a
-              href="https://open.spotify.com/user/hru6sad5pwm6vmzows5gqwmz1?si=83465a90225c4cde"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Spotify</a>!
-          </p>
-
-          <!-- AUDIO PLACEHOLDER -->
-          <h2>My Favorite Song!</h2>
-          <audio controls>
-            <source src="resources/song.mp3" type="audio/mpeg" />
-            Your browser does not support the audio element.
-          </audio>
-        </article>
-
-        <!-- VIDEO RECOMMENDATION -->
+        <!-- VIDEO -->
         <article id="videos">
           <h2>Trailer of my favorite movie!</h2>
-
-          <!-- VIDEO PLACEHOLDER -->
           <video controls width="480" height="270">
             <source src="resources/trailer.mp4" type="video/mp4" />
             Your browser does not support the video element.
           </video>
         </article>
-      </section>
+
+      </div>
     </main>
 
     <footer>
       <p>&copy; 2026 Shawn William Tan</p>
     </footer>
+
   </body>
 </html>

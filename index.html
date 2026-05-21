@@ -1,12 +1,17 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Home — Shawn William Tan</title>
   </head>
 
   <body>
+
     <header>
       <nav>
         <ul>
@@ -18,65 +23,65 @@
     </header>
 
     <main>
+
       <!-- ABOUT ME -->
-      <section id="about">
-        <h1>About Me</h1>
+      <h1>About Me</h1>
+      <section class="about">
 
-        <figure>
-          <img
-            src="resources/profile.jpg"
-            alt="Profile Photo"
-            width="250"
-          />
-        </figure>
+        <div class="abouttext">
+          <p>
+            Hi! My name is Shawn William Tan, you can call me Shawn or William.
+            I am currently a 2nd year student studying BS Information System in
+            De La Salle University!
+          </p>
+        </div>
 
-        <p>
-          Hi! My name is Shawn William Tan, you can call me Shawn or William. I
-          am currently a 2nd year student studying BS Information System in De
-          La Salle University!
-        </p>
+        <div class="img-container">
+          <img src="resources/profile.jpg" class="profile-pic" alt="Profile Photo">
+        </div>
 
-        <h2>Schools Attended</h2>
-        <ul>
-          <li>St. Peter the Apostle School</li>
-          <li>MAPUA University</li>
-          <li>De La Salle University</li>
-        </ul>
+        <div class="abouttext">
+          <h2>Schools Attended</h2>
+          <ul>
+            <li>St. Peter the Apostle School</li>
+            <li>MAPUA University</li>
+            <li>De La Salle University</li>
+          </ul>
+        </div>
+
       </section>
 
       <!-- INTERESTS -->
       <section id="interests">
-        <h2>Interests</h2>
+        <h1>Interests</h1>
 
-        <article>
+        <div class="interest-group">
           <h3>Listening to Music</h3>
-          <img
-            src="resources/favmusic.jpg"
-            alt="Music"
-            width="250"
-          />
-        </article>
+          <div class="music">
+            <img src="resources/whoa.jpg" alt="whoa">
+            <img src="resources/beloved.jpg" alt="beloved">
+            <img src="resources/bif.jpg" alt="bif">
+          </div>
+        </div>
 
-        <article>
+        <div class="interest-group">
           <h3>Watching Movies</h3>
-          <img
-            src="resources/favmovie.jpg"
-            alt="Movies"
-            width="250"
-          />
-        </article>
+          <div class="movie">
+            <img src="resources/angrymen.jpg" alt="12 Angry Men">
+            <img src="resources/wallflower.jpg" alt="Perks of Being a Wallflower">
+            <img src="resources/sunshine.jpg" alt="Sunshine">
+          </div>
+        </div>
 
-        <article>
+        <div class="interest-group">
           <h3>Drawing</h3>
-          <img
-            src="resources/drawing.jpg"
-            alt="Drawing"
-            width="250"
-          />
-        </article>
+          <div class="drawing">
+            <img src="resources/drawing.jpg" alt="Drawing" />
+          </div>
+        </div>
+
       </section>
 
-      <!-- INTERNAL PAGE LINKS -->
       <section id="page-links">
         <h2>Explore</h2>
         <ul>
@@ -84,10 +89,12 @@
           <li><a href="contact.html">Contact Me</a></li>
         </ul>
       </section>
+
     </main>
 
     <footer>
       <p>&copy; 2026 Shawn William Tan</p>
     </footer>
+
   </body>
 </html>
