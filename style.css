@@ -178,7 +178,7 @@ nav a:hover {
 
 .music img:hover,
 .movie img:hover {
-  transform: translateY(-3px);
+  transform: translateY(-14px);
 }
 
 .drawing {
